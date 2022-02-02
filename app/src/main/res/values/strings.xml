@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">testingJokeApp</string>
+    <string name="web_menu_text">Web</string>
+    <string name="jokes_menu_text">Jokes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reload_button_text">RELOAD</string>
+    <string name="count_of_jokes_text">Count of jokes</string>
+</resources>
