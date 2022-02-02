@@ -1,5 +1,6 @@
 package ru.glushko.testingjokeapp.presentation.fragments
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.net.ConnectivityManager
 import android.os.Bundle
@@ -16,8 +17,10 @@ class WebFragment : Fragment() {
 
     private lateinit var _webFBinding: FragmentWebBinding
 
+    @SuppressLint("SetJavaScriptEnabled")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _webFBinding = FragmentWebBinding.inflate(inflater, container, false)
+        _webFBinding.webView.settings.javaScriptEnabled = true
 
         if(savedInstanceState != null){
             _webFBinding.webView.restoreState(savedInstanceState)
